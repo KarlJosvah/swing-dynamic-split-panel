@@ -169,6 +169,7 @@ public class DefaultPanel extends JPanel {
 			splitPane.setRightComponent(newPanel);
 		}
 
+		Utilities.setupDivider(splitPane);
 		Utilities.replaceComponent(parent, this, splitPane, wasLeftInParentSplit);
 
 		Container root = parent;
