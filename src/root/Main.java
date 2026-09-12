@@ -41,8 +41,6 @@ public class Main extends JFrame {
 	}
 
 	private void config() {
-		javax.swing.JPanel root = new javax.swing.JPanel(new BorderLayout());
-		root.add(new DefaultPanel(), BorderLayout.CENTER);
-		this.setContentPane(root);
+		this.setContentPane(new NestedSplitedPanel(new DefaultPanel()));
 	}
 }
